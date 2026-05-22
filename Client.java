@@ -83,28 +83,11 @@ public class Client {
      */
     public static void main(String[] args) {
         Client app = new Client();
-        app.studentInfo();                    // Display header
         app.loadFromCsv("./student.csv");     // Load data
         app.menu();                           // Run main menu loop
         System.out.println("\nProgram terminated.");
         System.out.println("\nThank you for using the App");
     }
-
-    /**
-     * Displays student information header.
-     * Shows author details, student number, enrolment mode, tutor, and tutorial time.
-     * This method satisfies the requirement to output student details at program start.
-     */
-    private void studentInfo() {
-        System.out.println("================================================");
-        System.out.println("Student Name: Bibek Chaudhary Tharu");
-        System.out.println("Student Number: 35581249");
-        System.out.println("Mode of Enrolment: Internal");
-        System.out.println("Tutor Name: Rajasree Rajamohanan");
-        System.out.println("Tutorial Day/Time: Thursday 10:00 AM");
-        System.out.println("================================================\n");
-    }
-
     // ======================= MAIN MENU ==========================
     
     /**
